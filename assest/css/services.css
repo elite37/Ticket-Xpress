@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-size: 82.5%;
+    font-family: Poppins;
+}
+
+.services{
+    padding:2rem;
+}
+
+.services__container{
+    width:80%;
+    margin:auto;
+}
+
+
+.services__top{
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: url('../images/servicesimages/Group\ 4.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.services__top h4{
+    font-style: normal;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #5E6282;
+}
+
+
+.services__top h1{
+    font-family: Volkhov;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 64px;
+text-align: center;
+text-transform: capitalize;
+color: #14183E;
+
+}
+
+
+.services__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.service__card{
+    text-align: center;
+    padding:1rem  1.5rem;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1) , 0 4px 4px 0 rgba(0,0,0,0.15);
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: ease-in 0.3s;
+    height:295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.service__card:hover{
+    transform:translateY(-10px);
+}
+
+
+
+
+
+
+.service__card .service__card-title{
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #1E1D4C;
+padding: 0.5rem 0;
+}
+
+.service__card .service__card-body{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #5E6282;
+
+}
