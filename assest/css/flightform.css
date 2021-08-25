@@ -52,7 +52,7 @@ body{
 }
 
 .flight__option:hover{
-    background:#faf3e7
+    background:#f7f0e5
 }
 
 .flight__option a{
@@ -97,8 +97,8 @@ body{
 
 .filghttype{
      padding: 0.5rem 1rem;
-     margin-right:20px;
-     background: #CDD8EA;
+     margin-right: 50px !important;
+     background:#e0cca6;
      border-radius: 2px;
   
 }
@@ -107,6 +107,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#fff;
 }
 
 .filghttype a > div{
@@ -115,8 +116,16 @@ body{
 
 .flightform {
     display:flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.flightform__conn{
+    display:flex;
     align-items: center;
 }
+
+
 
 
 
@@ -131,12 +140,14 @@ body{
     flex-direction: column;
     margin-right: 20px;
     /* background:#e0cca6; */
-    /* background:#ffffff; */
-    background: #C4C4C4;
+    background:#ffffff;
     padding:0.5rem;
     border-radius: 5px;
 }
 
+.flightform__from div{
+    width:228px;
+}
 
 .flightform__from div input , .flightform__date div input{
      border:none;
@@ -154,15 +165,23 @@ body{
     font-size: 12px;
 }
 
-
+.submitdiv{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .flightsubmit{
+
     border:none;
     height:100%;
     outline:none;
-    height:74px;
+    height:60px;
     padding: 0.3rem 1.1rem;
-    background: #EF413680;
+    color: #fff;
+    background: #F1A501;
     border-radius: 5px;
     cursor:pointer;
+    width:180px;
 }
