@@ -97,8 +97,8 @@ body{
 
 .filghttype{
      padding: 0.5rem 1rem;
-     margin-right: 50px !important;
-     background:#e0cca6;
+     margin-right:20px;
+     background: #CDD8EA;
      border-radius: 2px;
   
 }
@@ -107,7 +107,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#fff;
 }
 
 .filghttype a > div{
@@ -132,7 +131,8 @@ body{
     flex-direction: column;
     margin-right: 20px;
     /* background:#e0cca6; */
-    background:#ffffff;
+    /* background:#ffffff; */
+    background: #C4C4C4;
     padding:0.5rem;
     border-radius: 5px;
 }
@@ -162,8 +162,7 @@ body{
     outline:none;
     height:74px;
     padding: 0.3rem 1.1rem;
-    color: #fff;
-    background: #F1A501;
+    background: #EF413680;
     border-radius: 5px;
     cursor:pointer;
 }
