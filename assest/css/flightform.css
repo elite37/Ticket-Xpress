@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+body{
+    font-size: 82.5%;
+    font-family: Poppins;
+}
+
+
+
+.flightbooking{
+       width:100%;
+       padding: 2rem;
+       
+}
+
+
+.flightbooking__container{
+      margin:auto;
+      width:80%;
+     padding:2rem;
+}
+
+
+.flightbooking__top{
+      display: flex;
+      align-items: center;
+}
+
+
+.flight__option{
+    margin-right: 20px;
+    padding:1rem 3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background 0.3s ease-in;
+}
+
+.flight__option:hover{
+    background:#faf3e7
+}
+
+.flight__option a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color:gray;
+}
+
+.flight__option  a div{
+    margin-left: 10px;
+}
+
+ .flight__option.active{
+    background:#FFF1DA;
+}
+
+.flight__option.active a{
+    color:black;
+}
+
+
+
+
+
+.flightbooking__bottom{
+    background:#FFF1DA;
+    padding:3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+.flighttypes{
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+.filghttype{
+     padding: 0.5rem 1rem;
+     margin-right: 50px !important;
+     background:#e0cca6;
+     border-radius: 2px;
+  
+}
+
+.filghttype a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
+.filghttype a > div{
+    margin-left: 10px;
+}
+
+.flightform {
+    display:flex;
+    align-items: center;
+}
+
+
+
+.flightform__from , .flightform__date{
+    display: flex;
+    align-items: center;
+
+}
+
+.flightform__from div , .flightform__date div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    /* background:#e0cca6; */
+    background:#ffffff;
+    padding:0.5rem;
+    border-radius: 5px;
+}
+
+
+.flightform__from div input , .flightform__date div input{
+     border:none;
+     outline:none;
+     background:transparent;
+     padding:0.5rem 0;
+     width: 100%;
+     font-size: 16px;
+     color:#223344;
+}
+
+
+.flightform__from div label , .flightform__date div label{
+    color:#6d8494;
+    font-size: 12px;
+}
+
+
+
+.flightsubmit{
+    border:none;
+    height:100%;
+    outline:none;
+    height:74px;
+    padding: 0.3rem 1.1rem;
+    color: #fff;
+    background: #F1A501;
+    border-radius: 5px;
+    cursor:pointer;
+}
