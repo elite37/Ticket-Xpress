@@ -1,0 +1,77 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+
+nav {
+    /* height: 4751px; */
+    /* width: 1502px; */
+    /* left: -148px; */
+    /* top: -491px; */
+    border-radius: 0px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: right;
+    /* margin-top: 40px; */
+    /* justify-content: space-around; */
+
+}
+.nav-img img {
+    position: relative;
+    width: 250px;
+    height: 80px;
+    left: 30px;
+    margin-top: 0px;
+    /* top: 38px; */
+}
+.search {
+    height: 29px;
+    width: 396px;
+    /* left: 288px; */
+    top: 48px;
+    border-radius: 15px;
+    /* border-radius: 50px; */
+    background-color: #fff1da;
+    /* height: 20px; */
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+/* fa-search { */
+    /* left:30px; */
+/* } */
+nav ul {
+    display: flex;
+    /* padding: 30px; */
+    justify-content: space-around;
+    margin-top: 35px;
+}
+nav li {
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    font-family: 'open sans';
+}
+li button {
+    background-color: #fff1da;
+    width: 80px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'open sans';
+    color: black;
+    font-weight: bold;
+    
+}
+nav a {
+    text-decoration: none;
+    font-family: 'open sans';
+    color: black;
+    font-weight: normal;
+}
+a:hover {
+    color: white;
+    background-color: brown;
+    transition: 1s;
+}
