@@ -24,33 +24,82 @@
 	width: 700px;
   height: 700px;
   object-fit: contain;
-  margin-left: 80px;
+   /* margin-left: 50px; */
 	box-sizing: border-box;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-between; */
 	
 }
 
 #contactForm {
-	width: 60%;
-	height: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  left: 30px;
-  /* display: flex;
-  flex-direction: column;
-	justify-content: space-between; */
-	border-left: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  /* justify-content: space-between;  */
+  align-items: center; 
+}
+
+.contactFormControl .formControl {
+  margin: 5px 15px;
 }
 
 #contactForm form {
   display: flex;
   flex-direction: column;
-	width: 70%;
-  height: 60vh;
+  /* position: relative; */
+  top: 150px;
+   /* margin-right: 100px ; */
+	width: 100%;
+  height: 70%;
   color: #ffffff;
 	background-color: #1A1A1A;
 	box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
 	border: 1px solid rgba(255, 255, 255, 0.01)
+}
+
+.contactFormControl input{
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+      
+}
+
+#message {
+	margin: 20px;
+}
+
+.contactFormControl textarea {
+	width: 100% !important;
+	/* height: 60vh !important; */
+	border: none;
+	outline: none;
+	/* background-color: transparent; */
+	box-sizing: border-box;
+	color: #EBEBEB;
+	font-size: 16px;
+}
+
+.contactFormControl textarea::placeholder {
+	font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Poppins';
+}
+
+.contactFormControl button {
+  color: #ffffff;
+  width: 50%;
+	height: 50px;
+	background-color: #df6951;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	margin: 0px;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contactFormControl button:active {
+	transform: scale(1.04);
+	transition: all ease 0.1s;
 }
