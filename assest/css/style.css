@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+#heroSection {
+  width: 100%;
+  background-image: url("../images/Decore.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  /* z-index: -1; */
+}
+
+.heroText {
+  width: 644px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heroText2 {
+  height: 300px;
+  width: 80%;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.heroText h1 {
+  font-size: 70px;
+  margin: 0px;
+  letter-spacing: -0.04em;
+  line-height: 75px;
+  color: #181e4b;
+  margin-bottom: 10px;
+  padding-top: 80px;
+  /* z-index: 1000; */
+  
+}
+
+.test {
+    position: absolute;
+    width: 500px;
+    top: 165px;
+}
+
+/* #heroLabel2::before {
+        content: url('../images/Decore\ \(1\).svg');
+        transform: translate(-90%, 50%);
+} */
+
+/* #hero-decore {
+  position: absolute;
+  left: 275px;
+  width: 310px;
+  height: 12px;
+  top: 291px;
+  z-index: 1;
+ } */
+
+ /* .heroLabel2 {
+      background-image: url('../images/Decore\ \(1\).png');
+      background-repeat: no-repeat;
+      background-position: relative;
+      top: 300px;
+      
+ } */
+
+ #hero-decore img{
+  position: absolute;
+  left: 275px;
+  width: 310px;
+  height: 12px;
+  top: 302px;
+  }
+
+.heroText p {
+  font-size: 16px;
+  margin: 0px;
+  letter-spacing: -0.04em;
+  color: #5e6282;
+  margin-bottom: 10px;
+}
+
+#heroLabel {
+  color: #df6951;
+  text-transform: uppercase;
+  font-size: 20px;
+  
+}
+
+/* .heroLabel2 {
+    z-index: -2;
+} */
+
+#hero-Img {
+  position: relative;
+  width: 520px;
+  height: 650px;
+  top: 60px;
+  left: 70px;
+  object-fit: contain;
+}
+
+#book-Btn {
+  text-decoration: none;
+  width: 120px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1a501;
+  color: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 10px;
+  font-family: "Volkhov", sans-serif;
+  font-size: 22px;
+}

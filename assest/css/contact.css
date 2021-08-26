@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+  }
+
+  #contactUs {   
+        width: 100%;
+        height: 50vh;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)), url('../images/TE-Title-Contact-Us.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+  }
+
+#contact-Img img{
+	width: 700px;
+  height: 700px;
+  object-fit: contain;
+  margin-left: 80px;
+	box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+#contactForm {
+	width: 60%;
+	height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 30px;
+  /* display: flex;
+  flex-direction: column;
+	justify-content: space-between; */
+	border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#contactForm form {
+  display: flex;
+  flex-direction: column;
+	width: 70%;
+  height: 60vh;
+  color: #ffffff;
+	background-color: #1A1A1A;
+	box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.01)
+}
