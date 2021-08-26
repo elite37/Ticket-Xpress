@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.Bus_booking_section {
+  width: 100%;
+  padding: 2rem;
+}
+.Bus_booking_wrapper {
+  background-color: rgb(255, 248, 220);
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.Booking_features {
+  display: flex;
+  align-items: center;
+}
+.Booking_info {
+  background-color: #fff;
+  width: 210px;
+  padding: 1.7rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.Booking_info:hover {
+  background: #faf3e7;
+}
+.Booking_info.active {
+  background: #fff1da;
+}
+
+.fas:before {
+  content: "";
+  padding-left: 0.5rem;
+}
+
+.flight_booking_features {
+  background-color: #fff1da;
+  padding: 0.9rem;
+}
+.booking_type_container {
+  display: flex;
+  margin-bottom: 1.5rem;
+  margin-left: 5px;
+}
+.booking_type {
+  padding: 0.5rem 3rem;
+  margin-right: 20px;
+  background: #cdd8ea;
+  border-radius: 2px;
+}
+.booking_type a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* form */
+.Booking_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Booking__form__bus,
+.Booking__form__date {
+  display: flex;
+  align-items: center;
+}
+
+.Booking__form__bus div,
+.Booking__form__date div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  background: #c4c4c4;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.Booking__form__bus div input,
+.Booking__form__date div input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.5rem 0;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #223344;
+}
+.booking__submit {
+  background-color: #ef413680;
+  padding: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
