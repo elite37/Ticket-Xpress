@@ -4,80 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book a Bus</title>
-    <link rel="stylesheet" href="/assest/css/busform.css" />
+    <link rel="stylesheet" href="../assest/css/flightform.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <title>Document</title>
   </head>
   <body>
-    <section class="Bus_booking_section">
-      <div class="Bus_booking_wrapper">
-        <div class="Booking_features">
-          <div class="Booking_info">
-            <a href="#"> BOOK FLIGHT <i class="fas fa-plane"></i></a>
+    <div class="flightbooking">
+      <div class="flightbooking__container">
+        <div class="flightbooking__top">
+          <div class="flight__option">
+            <a href="flightform.html">
+              Book Flight
+              <div class=""><i class="fas fa-plane"></i></div>
+            </a>
           </div>
-          <div class="Booking_info">
-            <a href="#">BOOK TRAIN<i class="fas fa-train"></i></a>
+          <div class="flight__option active">
+            <a href="#">
+              Book Bus
+              <div class=""><i class="fas fa-bus"></i></div>
+            </a>
           </div>
-          <div class="Booking_info active">
-            <a href="#">BOOK BUS<i class="fas fa-bus"></i></a>
+          <div class="flight__option">
+            <a href="trainform.html">
+              Book Train
+              <div class=""><i class="fas fa-train"></i></div>
+            </a>
           </div>
         </div>
 
-        <div class="flight_booking_features">
-          <div class="booking_type_container">
-            <div class="booking_type">
-              <a href="#"
-                >1 Passenger
-                <div class=""><i class="fas fa-sort-down"></i></div
-              ></a>
+        <div class="flightbooking__bottom">
+          <div class="flighttypes">
+            <div class="filghttype">
+              <a href="#">
+                Round Trip
+                <div class=""><i class="fas fa-sort-down"></i></div>
+              </a>
+            </div>
+            <div class="filghttype">
+              <a href="#">
+                1 Passenger
+                <div class=""><i class="fas fa-sort-down"></i></div>
+              </a>
             </div>
 
-            <div class="booking_type">
-              <a href="#"
-                >Economy
-                <div class=""><i class="fas fa-sort-down"></i></div
-              ></a>
+            <div class="filghttype">
+              <a href="#">
+                Economy
+                <div class=""><i class="fas fa-sort-down"></i></div>
+              </a>
             </div>
           </div>
 
-          <form action="" class="Booking_form">
-            <div class="Booking__form__bus">
-              <div class="Departure">
-                <label for=""> Departure</label>
-                <input type="text" name="" id="" placeholder="State" />
+          <form action="" class="flightform">
+            <div class="flightform__conn">
+              <div class="flightform__from">
+                <div class="">
+                  <label for="">From where ?</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="City Or Terminal"
+                  />
+                </div>
+
+                <div class="">
+                  <label for="">To where ?</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="City Or Terminal"
+                  />
+                </div>
               </div>
 
-              <div class="arrival">
-                <label for=""> Arriving</label>
-                <input type="text" name="" id="" placeholder="State" />
+              <div class="flightform__date">
+                <div class="">
+                  <label for="">Leaving On</label>
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    placeholder="City Or Airport"
+                  />
+                </div>
+
+                <div class="">
+                  <label for="">Returning On</label>
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    placeholder="City Or Airport"
+                  />
+                </div>
               </div>
             </div>
 
-            <div class="Booking__form__date">
-              <div class="leave">
-                <label for="">Leaving On ?</label>
-                <input type="date" name="" id="" placeholder="June 21,2020" />
-              </div>
-
-              <div class="Return">
-                <label for="">Returning On ?</label>
-                <input type="date" name="" id="" placeholder="June 30,2020" />
-              </div>
+            <div class="submitdiv">
+              <input type="submit" value="Let's Go" class="flightsubmit" />
             </div>
-
-            <input type="submit" value="LET'S GO" class="booking__submit" />
           </form>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>

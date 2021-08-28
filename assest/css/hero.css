@@ -17,6 +17,7 @@ body {
   background-image: url("../images/Decore.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   /* z-index: -1; */
 }
 
@@ -57,10 +58,16 @@ body {
   /* z-index: 1000; */
 }
 
-/* .test {
+/* .test::before {
+  content: url("../images/Decore\ \(1\).svg");
   position: absolute;
-  width: 500px;
-  top: 165px;
+  width: 30px;
+  top: 305px;
+  left: 400px;
+} */
+
+/* .test {
+  z-index: 5;
 } */
 
 /* #heroLabel2::before {
