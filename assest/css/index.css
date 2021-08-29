@@ -3,3 +3,12 @@
   padding: 0;
   margin: 0;
 }
+
+section {
+  margin-bottom: 40px;
+}
+
+/* header {
+  position: fixed;
+  width: 100%;
+} */

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Volkhov", serif;
+}
+
+section .container {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.container .heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 38px;
+  color: #14183e;
+  margin: 20px;
+}
+
+.container .destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container .destinations .dest-img img {
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  margin-bottom: 0;
+}
+
+.destinations .dest-card {
+  background: #fff;
+  margin-top: 0;
+  padding: 2px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.destinations .dest-card .area,
+.destinations .dest-card .time {
+  display: flex;
+  width: 90%;
+  font-size: 18px;
+  color: #14183e;
+  margin: 8px auto;
+}
+
+.destinations .dest-card .area {
+  justify-content: space-between;
+}
+
+.destinations .dest-card .time img {
+  margin-right: 9px;
+}
