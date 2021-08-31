@@ -7,7 +7,8 @@
 nav {
   display: flex;
   justify-content: right;
-  margin-bottom: 10px;
+  margin: auto auto 10px auto;
+  width: 80%;
 }
 
 .logo img {
