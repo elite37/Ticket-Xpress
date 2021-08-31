@@ -13,12 +13,73 @@
 
   <!-- Styling -->
   <link rel="stylesheet" href="/assest/css/index.css" />
+  <link rel="stylesheet" href="/assest/css/navbar.css" />
+  <link rel="stylesheet" href="/assest/css/hero.css" />
   <link rel="stylesheet" href="/assest/css/services.css" />
+  <link rel="stylesheet" href="/assest/css/top_destination.css" />
   <link rel="stylesheet" href="/assest/css/About.css" />
   <link rel="stylesheet" href="/assest/css/newsletter.css" />
   <link rel="stylesheet" href="/assest/css/footer.css" />
 </head>
 <body>
+  <!-- Navbar Section -->
+  <header>
+  <nav>
+    <div class="logo">
+      <a href="#">
+      <img src="/assest/images/logo.png" />
+    </a>
+    </div>
+    <div class="search">
+      <input type="text" class="fa-search search" name="search" id="search" placeholder="Search">
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="./pages/busbooking.html">Bus</a></li>
+        <li><a href="./pages/trainbooking.html">Train</a></li>
+        <li><a href="./pages/flightbooking.html">Flight</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li>
+          <a href="#"><button>Login</button></a>
+        </li>
+        <li><a href="#">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- End navbar Section -->
+  <!-- Hero section -->
+      <section id="heroSection">
+        <div class="hero_section_container">
+        <div class="heroText">
+          <div id="heroText2">
+            <div id="hero-decore">
+              <!-- <img src="/assest/images/Decore (1).svg" alt="" /> -->
+            </div>
+            <div>
+              <h3 id="heroLabel">Best all in one booking platform</h3>
+              <!-- <div class="test"><h1>Ticket Xpress,</h1></div> -->
+              <h1>Ticket Xpress, your all in one booking ticket.</h1>
+            </div>
+
+            <p id="heroDetails">
+              Our goal is to centralize transport industry, and make ticket
+              bookings to your preffered location easily accessible from the
+              comfort of your home.
+            </p>
+
+            <a href="./pages/flightbooking.html" id="book-Btn"><span>Book</span></a>
+          </div>
+        </div>
+
+        <div id="hero-Img">
+          <img src="/assest/images/Hero-Image.png" alt="" />
+        </div>
+        </div>
+      </section>
+  </header>
+  <!-- End of Hero section -->
   <!-- Our services section -->
   <section class="services">
     <div class="services__container">
@@ -66,6 +127,62 @@
           </div>
     </section>
     <!-- End of Our services section. -->
+    <!-- Top Destination section -->
+     <section>
+      <div class="container">
+        <div class="top-destination">
+          <h1 class="heading">Top Destinations</h1>
+          <div class="destinations">
+            <div class="destination">
+              <div class="dest-img">
+                <img src="/assest/images/abuja.png" alt="abuja" />
+              </div>
+              <div class="dest-card">
+                <div class="area">
+                  <span><h4>Jabi, Abuja</h4></span>
+                  <span><h4>#29, 900</h4></span>
+                </div>
+                <div class="time">
+                  <img src="/assest/images/dest.svg" alt="" />
+                  <h4>1 hour</h4>
+                </div>
+              </div>
+            </div>
+            <div class="destination">
+              <div class="dest-img">
+                <img src="/assest/images/yola.png" alt="Yola" />
+              </div>
+              <div class="dest-card">
+                <div class="area">
+                  <span><h4>Yola, Adamawa</h4></span>
+                  <span><h4>#34, 200</h4></span>
+                </div>
+                <div class="time">
+                  <img src="/assest/images/dest.svg" alt="" />
+                  <h4>1hr 50mins</h4>
+                </div>
+              </div>
+            </div>
+            <div class="destination">
+              <div class="dest-img">
+                <img src="/assest/images/akwa-ibom.png" alt="akwa-ibom" />
+              </div>
+              <div class="dest-card">
+                <div class="area">
+                  <span><h4>Akwa Ibom, Uyo</h4></span>
+                  <span><h4>#25k</h4></span>
+                </div>
+                <div class="time">
+                  <img src="/assest/images/dest.svg" alt="" />
+                  <h4>1 hour</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Top Destination section -->
     <!-- About section -->
     <section class="About__section">
       <div class="About__Wrapper">

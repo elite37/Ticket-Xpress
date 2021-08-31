@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Volkhov&display=swap");
 
 * {
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -41,10 +42,10 @@
 .contactFormControl .formControl {
   margin: 5px 15px;
 }
-
 #contactForm form {
   display: flex;
   flex-direction: column;
+
   /* position: relative; */
   top: 150px;
    /* margin-right: 100px ; */
@@ -103,3 +104,4 @@
 	transform: scale(1.04);
 	transition: all ease 0.1s;
 }
+
