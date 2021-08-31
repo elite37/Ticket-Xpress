@@ -6,7 +6,7 @@
 
 body {
   /* font-size: 82.5%; */
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
 }
 .services {
   padding: 2rem;
@@ -35,7 +35,7 @@ body {
 }
 
 .services__top h1 {
-  font-family: Volkhov;
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;

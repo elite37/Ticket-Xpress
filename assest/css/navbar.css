@@ -35,7 +35,7 @@ nav {
 }
 
 input[type="text" i] {
-  font-family: poppins, sans-serif;
+  font-family: "poppins", sans-serif;
   color: black;
 }
 
@@ -51,7 +51,7 @@ nav li {
   padding: 15px;
   list-style: none;
   display: flex;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav li button {
@@ -59,7 +59,7 @@ nav li {
   border: 0.5px solid black;
   border-radius: 5px;
   text-decoration: none;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   font-weight: bold;
   width: 102px;
@@ -75,7 +75,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   font-weight: normal;
 }

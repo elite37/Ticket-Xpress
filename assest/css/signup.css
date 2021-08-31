@@ -14,7 +14,7 @@
   }
 
 body{
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 82.5%;
 }
 
@@ -56,7 +56,7 @@ color: #000000;
 }
 
 .userform__switch{
-    font-family: Volkhov;
+    font-family: "Poppins", sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size:20px;

@@ -6,7 +6,7 @@
 } */
 .footer-container {
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
