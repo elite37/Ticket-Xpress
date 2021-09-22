@@ -21,10 +21,12 @@ body{
 .userform{
     height: 100vh;
     width:100%;
-   overflow: hidden;
    display: flex;
    justify-content:center;
    align-items: center;
+   background-image: url("../images/Decore.jpg");
+   background-repeat: no-repeat;
+   position: relative;   
 }
 
 
@@ -34,17 +36,20 @@ body{
 .userform__left , .userform__right{
     width:50%;
     height:100%;
+  
 }
 
 .userform__left{
     padding-left: 3rem;
+    padding-top: 6rem;
 }
 
 
 
 .userform__right{
-background: #FFF1DA;
+/* background: #FFF1DA; */
 padding:3rem;
+padding-top: 7rem;
 }
 
 

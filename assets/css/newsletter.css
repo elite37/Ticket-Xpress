@@ -3,7 +3,9 @@
   height: 407px;
   background: #dfd7f983;
   border-radius: 120px 20px 20px 20px;
-  margin: 35px;
+  margin:35px auto;
+  width: 90%;
+  
 }
 
 .newsletter__rings {
