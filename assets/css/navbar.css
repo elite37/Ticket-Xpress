@@ -4,42 +4,41 @@
   margin: 0;
 }
 
- 
-header{
-   width:100%;
-   position: fixed;
+header {
+  width: 100%;
+  position: fixed;
   z-index: 100;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
   transition: 0.3s ease-in;
 }
 
-header.bg-white{
-     background-color: #fff;
-     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.19);
+header.bg-white {
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
 
- header nav{
-    display:flex;
-    justify-content: space-between;
-   align-items: center;
-   width:95%;
-   margin:auto;
- }
+.search,
+.nav {
+  margin-top: 10px;
+}
 
- .search , .nav{
-   margin-top: 10px;
- }
-
-  input[type="text"] {
+input[type="text"] {
   width: 396px;
   font-family: "poppins", sans-serif;
   color: black;
-  outline:none;
- border:1px solid rgba(0,0,0,0.29);
- padding:0.5rem 0.8rem;
- border-radius: 999px;
-} 
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+}
 
 nav ul {
   display: flex;
@@ -68,17 +67,12 @@ nav li {
   top: 32px;
 }
 
-
-
-
-
 .fa-search {
   background-color: #fff1da;
   color: #212832;
   margin-left: 15px;
   margin-top: 7px;
 }
-
 
 .nav li button:hover {
   color: brown;
@@ -96,4 +90,4 @@ nav a {
 a:hover {
   color: brown;
   transition: ease-in-out 0.5s;
-}  
+}
