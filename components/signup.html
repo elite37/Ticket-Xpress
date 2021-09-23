@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TicketXpress SignUp</title>
+    <script src="../assets/js/register.js" type="module"></script>
     <link rel="stylesheet" href="../assets/css/navbar.css" />
     <link rel="stylesheet" href="../assets/css/signup.css" />
   </head>
@@ -94,21 +95,21 @@
           <form action="" class="userformed">
             <div class="row">
               <div class="formGroup">
-                <label for="firstname">Firstname</label>
-                <input type="text" />
+                <label for="firstname">First Name</label>
+                <input id="firstNameField" type="text" />
               </div>
               <div class="formGroup">
-                <label for="lastname">Lastname</label>
-                <input type="text" />
+                <label for="lastname">Last Name</label>
+                <input id="lastNameField" type="text" />
               </div>
             </div>
             <div class="formGroup">
               <label for="emailaddress">Email Address</label>
-              <input type="email" />
+              <input id='emailField' type="email" />
             </div>
             <div class="formGroup">
               <label for="lastname">Password</label>
-              <input type="password" />
+              <input id='passwordField' type="password" />
             </div>
 
             <div class="condition">
@@ -122,7 +123,7 @@
             </div>
 
             <div class="signsub">
-              <input type="submit" value="Register" />
+              <input id="signUpButton" type="submit" value="Register" />
             </div>
           </form>
         </div>
