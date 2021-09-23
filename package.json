@@ -1,0 +1,20 @@
+{
+  "type": "commonjs",
+  "name": "ticket-xpress",
+  "version": "1.0.0",
+  "description": "Ticket Xpress is an automated system for purchasing online ticket. This application allows users book and pay for bus, train or flight ticket directly through our web app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elite37/Ticket-Xpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elite37/Ticket-Xpress/issues"
+  },
+  "homepage": "https://github.com/elite37/Ticket-Xpress#readme"
+}
