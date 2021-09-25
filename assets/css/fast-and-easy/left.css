@@ -1,0 +1,25 @@
+.left {
+        margin: 0 0 2rem 0;
+        max-width: fit-content;
+}
+
+.left > .heading {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.03125rem;
+    color: var(--almost-black)
+}
+
+.left > .tagline {
+    margin: 0 0 0.9375rem 0;
+}
+
+.left > .heading {
+    margin: 0 0 2.1875rem 0;
+}
+
+@media (min-width: 1071px) {
+    .main {
+        margin: 0 1rem 0 0;
+    }
+}
