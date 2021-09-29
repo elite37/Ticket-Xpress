@@ -1,0 +1,39 @@
+@import url('ongoing.css');
+@import url('progress.css');
+@import url('colors.css');
+@import url('right.css');
+@import url('steps.css');
+@import url('trip.css');
+@import url('left.css');
+@import url('main.css');
+
+:root {
+    --progress-radius: 1.875rem;
+    --progress-radius: 30px;
+    --small-breakpoint: 73.6875rem;
+    --tiny-breakpoint: 27.25rem;
+    --purple: #8A79DF;
+    --grey: #84829A;
+    --light-grey: #F5F5F5;
+    --text-clr: #5E6282;
+    --almost-black: #14183E;
+    --strong: 600;
+    --stronger: 700;
+    --line-height: 1.245;
+    --space-3: 1.8125rem;
+    --space-2: 1.125rem;
+    --space-1: .8125rem;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../../fonts/poppins.ttf');
+    font-weight: 400;
+    line-height: 124.5%;
+}
+
+* {
+    font-family: Poppins;
+    line-height: var(--line-height);
+}
