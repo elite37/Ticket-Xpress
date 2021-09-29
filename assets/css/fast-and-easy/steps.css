@@ -1,0 +1,41 @@
+.steps {
+    display: grid;
+    gap: 3.25rem 0;
+}
+
+@media (max-width: var(--tiny-breakpoint)) {
+    .step {
+        max-width: fit-content;
+    }
+}
+
+.step {
+    display: grid;
+    gap: 0.25rem 1.3125rem;
+    grid-template-columns: min-content fit-content(100%);
+    grid-template-rows: repeat(2, min-content);
+}
+
+.step .heading {
+    color: var(--text-clr);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: var(--reg-line-height);
+    margin: 0;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.step .body {
+    margin: 0;
+    color: var(--text-clr);
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.step .icon {
+    border-radius: 0.8125rem;
+    height: 2.9375rem;
+    width: 2.9375rem;
+    grid-row: 1/-1;
+}
