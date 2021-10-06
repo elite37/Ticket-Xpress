@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agent Dashboard</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/agentdashboard.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- LEft Sidebar -->
+      <section class="leftbar">
+        <div class="menu">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="/assets/images/logo.png" alt="Ticket Xpress Logo" />
+            </a>
+          </div>
+          <div class="menu-list">
+            <div class="menu-options">
+              <div class="option active">
+                <a href="#">
+                  <!-- <i class="fas fa-folder-minus"></i> -->
+                  <img
+                    src="../assets/images/userDashBoard/dashboard.png"
+                    alt="dashboard"
+                    class="icon"
+                  />
+                  <p>Dashboard</p>
+                </a>
+              </div>
+              <div class="option">
+                <a href="#">
+                  <!-- <i class="fas fa-ticket-alt"></i> -->
+                  <img
+                    src="../assets/images/userDashBoard/myTicket.png"
+                    alt="Ticket"
+                    class="icon"
+                  />
+                  <p>Listing</p>
+                </a>
+              </div>
+              <div class="option">
+                <a href="#">
+                  <!-- <i class="fas fa-money-check"></i> -->
+                  <img src="../assets/images/userDashBoard/transaction.png"
+                  alt="transaction class="icon" />
+                  <p>Transaction</p>
+                </a>
+              </div>
+              <div class="option">
+                <a href="">
+                  <img
+                    src="../assets/images/userDashBoard/agent.png"
+                    alt="agent"
+                    class="icon"
+                  />
+                  <p>Client</p>
+                </a>
+              </div>
+              <div class="option">
+                <a href="#">
+                  <!-- <i class="fas fa-cog"></i> -->
+                  <img
+                    src="../assets/images/userDashBoard/settings.png"
+                    alt="setting"
+                    class="icon"
+                  />
+                  <p>Settings</p>
+                </a>
+              </div>
+            </div>
+            <div class="menu-logout">
+              <div class="option logout">
+                <a href="#">
+                  <!-- <i class="fas fa-sign-out-alt"></i> -->
+                  <img
+                    src="../assets/images/userDashBoard/logout.png"
+                    alt="logout"
+                    class="icon"
+                  />
+                  <p>Log out</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Left sidebar -->
+
+      <!-- Main Dashboard -->
+      <section class="main">
+        <div class="main-nav">
+          <div class="welcome">
+            <h1>Hello, Damilola!</h1>
+            <small>Welcome back and explore the world</small>
+          </div>
+          <div class="search">
+            <label for="search">
+              <i class="fas fa-search-plus"></i>
+            </label>
+            <input
+              type="text"
+              name="Search"
+              id="search"
+              placeholder="Search Destination"
+            />
+          </div>
+          <div class="notification">
+            <i class="far fa-bell"></i>
+          </div>
+        </div>
+        <div class="location">
+          <div class="place">
+            <figure>
+              <img src="../assets/images/abuja.png" alt="Abuja" />
+            </figure>
+            <figcaption>Abuja</figcaption>
+          </div>
+          <div class="place">
+            <figure>
+              <img src="../assets/images/yola.png" alt="Yola" />
+            </figure>
+            <figcaption>Yola</figcaption>
+          </div>
+          <div class="place">
+            <figure>
+              <img src="../assets/images/akwa-ibom.png" alt="Akwa-Ibom" />
+            </figure>
+            <figcaption>Akwa-Ibom</figcaption>
+          </div>
+        </div>
+        <div class="best-destination">
+          <div class="destination">
+            <div class="destination-header">
+              <h2>Client's Destination</h2>
+              <div class="filter">
+                <a href="#">
+                  <i class="fas fa-sort-amount-up"></i>
+                  <p>Filters</p>
+                </a>
+              </div>
+            </div>
+            <div class="destination-location">
+              <div class="destination-location-body">
+                <img
+                  src="../assets/images/userDashBoard/obudu.png"
+                  alt="Obudu cattle ranch"
+                />
+                <div class="destination-location-text">
+                  <h3>Obudu Cattle Ranch</h3>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <small>Cross River</small>
+                </div>
+              </div>
+              <div class="filter-content">
+                <img
+                  src="../assets/images/userDashBoard/plane.png"
+                  alt="Flight Icon"
+                />
+                <h4>&#8358; 35,000</h4>
+              </div>
+            </div>
+            <div class="destination-location">
+              <div class="destination-location-body">
+                <img
+                  src="../assets/images/userDashBoard/tunapa.png"
+                  alt="Tinapa Resort"
+                />
+                <div class="destination-location-text">
+                  <h3>Tinapa Resort</h3>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <small>Calabar</small>
+                </div>
+              </div>
+              <div class="filter-content">
+                <img
+                  src="../assets/images/userDashBoard/plane.png"
+                  alt="Flight Icon"
+                />
+                <h4>&#8358; 38,000</h4>
+              </div>
+            </div>
+            <div class="destination-location">
+              <div class="destination-location-body">
+                <img
+                  src="../assets/images/userDashBoard/ikogosi.png"
+                  alt="Ikogosi"
+                />
+                <div class="destination-location-text">
+                  <h3>Ikogosi</h3>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <small>Ekiti</small>
+                </div>
+              </div>
+              <div class="filter-content">
+                <img
+                  src="../assets/images/userDashBoard/plane.png"
+                  alt="Flight Icon"
+                />
+                <h4>&#8358; 45,800</h4>
+              </div>
+            </div>
+          </div>
+          <div class="customization">
+            <img
+              src="../assets/images/userDashBoard/customization.png"
+              alt="Customize Ticket Illustration"
+            />
+            <div class="join">
+              <h3 class="text-box">Plan your trip with us.</h3>
+              <small>Get special offers & Discount.</small>
+            </div>
+            <h3 class="text-box join">Begin now!</h3>
+          </div>
+        </div>
+      </section>
+      <!-- End of Main Dashboard -->
+
+      <!-- Right Sidebar -->
+      <section class="rightbar">
+        <div class="schedule-nav">
+          <i class="far fa-3x fa-user schedule-nav-list"></i>
+          <h1 class="schedule-nav-list">Damilola Ogungbenro</h1>
+          <i class="fas fa-3x fa-angle-down schedule-nav-list"></i>
+        </div>
+        <div class="calender">
+          <div class="month">
+            <strong>September 2021</strong>
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <table>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thur</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td class="taken">9</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>12</td>
+              <td class="taken">13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="schedule">
+          <h3>My Schedule</h3>
+        </div>
+        <div class="schedule-list">
+          <img src="../assets/images/userDashBoard/lcc.png" alt="Lekki" />
+          <div class="schedule-text">
+            <h3>Lekki Conservative Center</h3>
+            <small>9th,Sept - 13th,Sept</small>
+          </div>
+        </div>
+        <div class="schedule-list">
+          <img src="../assets/images/userDashBoard/lcc.png" alt="Lekki" />
+          <div class="schedule-text">
+            <h3>Lekki Conservative Center</h3>
+            <small>9th,Sept - 13th,Sept</small>
+          </div>
+        </div>
+        <div class="schedule-list">
+          <img src="../assets/images/userDashBoard/lcc.png" alt="Lekki" />
+          <div class="schedule-text">
+            <h3>Lekki Conservative Center</h3>
+            <small>9th,Sept - 13th,Sept</small>
+          </div>
+        </div>
+      </section>
+      <!-- End of Right sidebar -->
+    </main>
+  </body>
+</html>

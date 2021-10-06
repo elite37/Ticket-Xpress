@@ -92,26 +92,48 @@
             <hr />
           </div>
 
-          <p id='authError' class="error"></p>
+          <p id="authError" class="error"></p>
 
           <form action="" class="userformed">
             <div class="row">
               <div class="formGroup">
                 <label for="firstname">First Name</label>
-                <input id="firstNameField" type="text" />
+                <input
+                  id="firstNameField"
+                  type="text"
+                  required
+                  pattern="(.*)\s(.*)"
+                  class="form-control"
+                />
               </div>
               <div class="formGroup">
                 <label for="lastname">Last Name</label>
-                <input id="lastNameField" type="text" />
+                <input
+                  id="lastNameField"
+                  type="text"
+                  required
+                  pattern="(.*)\s(.*)"
+                  class="form-control"
+                />
               </div>
             </div>
             <div class="formGroup">
               <label for="emailaddress">Email Address</label>
-              <input id='emailField' type="email" />
+              <input
+                id="emailField"
+                type="email"
+                required
+                class="form-control"
+              />
             </div>
             <div class="formGroup">
               <label for="lastname">Password</label>
-              <input id='passwordField' type="password" />
+              <input
+                id="passwordField"
+                type="password"
+                required
+                class="form-control"
+              />
             </div>
 
             <div class="condition">
