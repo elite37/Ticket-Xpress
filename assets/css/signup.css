@@ -175,3 +175,68 @@ body {
 input:required {
   border-left: 5px solid #c93c32 !important;
 }
+
+
+  @media(max-width:750px){
+     
+    .userform{
+        flex-direction: column;
+        height: initial;
+    }
+  
+
+    .userform__left{
+        display: none;
+    }
+
+    .userform__right {
+        width:100%;
+    }
+
+    .alternative__signin{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .alt{
+        width:100%;
+        margin-bottom: 15px;
+    }
+
+    .alt button{
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .alt button img {
+      margin-right: 20px;
+    }
+
+    .userform .row {
+      flex-direction: column;
+    }
+
+  .userform .row .formGroup{
+      width:100%;
+  }
+
+    .userform .row input {
+      width:100%;
+    }
+
+  }
+
+  @media(max-width:450px){
+   
+    .userform__right h1 {
+      font-size: 30px;
+    }
+    
+    .userform__switch {
+      font-size: 15px;
+      }
+    
+    
+  }
