@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket Page</title>
-    <link rel="stylesheet" href="../assets/css/navbar.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css" />
-    <link rel="stylesheet" href="../assets/css/ticket_page.css" />
+    <link rel="stylesheet" href="../assest/css/navbar.css">
+    <link rel="stylesheet" href="../assest/css/footer.css" />
+    <link rel="stylesheet" href="../assest/css/ticket_page.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <img src="/assets/images/logo.png" />
+          <img src="../assest/images/logo.png" />
         </div>
         <div class="search">
           <input
@@ -45,11 +45,11 @@
       <div class="ticketCard-wrap">
         <div class="ticketCard">
           <div class="bg-Img">
-            <img src="../assets/images/Decore.png" alt="" />
+            <img src="../assest/images/Decore.png" alt="" />
           </div>
 
           <img
-            src="../assets/images/add-ticket.png"
+            src="../assest/images/add-ticket.png"
             alt=""
             class="ticket-img"
           />
@@ -63,11 +63,11 @@
 
         <div class="ticketCard">
           <div class="bg-Img">
-            <img src="../assets/images/Decore.png" alt="" />
+            <img src="../assest/images/Decore.png" alt="" />
           </div>
 
           <img
-            src="../assets/images/change-ticket.png"
+            src="../assest/images/change-ticket.png"
             alt=""
             class="ticket-img"
           />
@@ -76,23 +76,38 @@
             This service allows you to make changes on your ticket such as date
             change, route change and cabin change on your existing bookings
           </p>
-          <button class="ticket-pageBtn" id="ticket-pageBtn" onclick="showModal()"><a >SELECT</a></button>
+          <button
+            class="ticket-pageBtn"
+            id="ticket-pageBtn"
+            onclick="showModal()"
+          >
+            <a>SELECT</a>
+          </button>
           <div class="modal-display" id="modal-display">
             <button class="modal-closure" onclick="closeModal()">x</button>
-         <form action="" class="modal-form">
-             <input type="text" placeholder="Booking Number" class="bookingNum"/>
-             <input type="text" placeholder="Last Name" class="lastName"/>
-             <input type="email" placeholder="Email" class="email"/>
-             <input type="button" value="SUBMIT" class="modal-btn" onclick="submitModal()"/>
-         </form>
-        </div>
+            <form action="" class="modal-form">
+              <input
+                type="text"
+                placeholder="Booking Number"
+                class="bookingNum"
+              />
+              <input type="text" placeholder="Last Name" class="lastName" />
+              <input type="email" placeholder="Email" class="email" />
+              <input
+                type="button"
+                value="SUBMIT"
+                class="modal-btn"
+                onclick="submitModal()"
+              />
+            </form>
+          </div>
         </div>
 
         <div class="ticketCard">
-            <div class="bg-Img">
-                <img src="../assets/images/Decore.png" alt="" />
-              </div>
-          <img src="../assets/images/refund.png" alt="" class="ticket-img" />
+          <div class="bg-Img">
+            <img src="../assest/images/Decore.png" alt="" />
+          </div>
+          <img src="../assest/images/refund.png" alt="" class="ticket-img" />
           <h3 class="ticketPage-txt">REFUND</h3>
           <p class="ticketPage-para">
             This service allows you to request for a refund on a paid existing
@@ -107,7 +122,7 @@
       <div class="footer-container">
         <div class="footer-row">
           <div class="footer-content">
-            <h2><img src="/assets/images/logo.png" alt="logo" /></h2>
+            <h2><img src="../assest/images/logo.png" alt="logo" /></h2>
             <p>Book your Ticket in minute, get full control for much longer.</p>
           </div>
           <div class="footer-content">
@@ -142,6 +157,6 @@
       </div>
     </footer>
 
-    <script src="../assets/js/ticket_page_modal.js"></script>
+    <script src="../assest/js/ticket_page_modal.js"></script>
   </body>
 </html>
