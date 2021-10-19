@@ -16,7 +16,7 @@
                 header.classList.remove("bg-white");
 
                }
-               console.log("Hello World")
+              
    
       })
 

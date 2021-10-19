@@ -109,7 +109,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 130px;
-    width:80%;
+    width:90%;
+    overflow: hidden;
   }
 
   #hero-Img {
@@ -140,6 +141,7 @@ body {
   
   .hero_section_container{
     width:100%;
+    overflow: initial;
   }
 
   .heroText p {
