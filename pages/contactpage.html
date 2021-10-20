@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Page</title>
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/contactpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <!-- Navbar Section -->
+  <header>
+  <nav>
+    <div class="logo">
+      <a href="../index.html">
+      <img src="/assets/images/logo.png" />
+    </a>
+    </div>
+    <div class="search">
+      <input type="text" class="fa-search search" name="search" id="search" placeholder="Search">
+    </div>
+    <div class="nav">
+      <ul class="lg-nav">
+        <li><a href="./busbooking.html">Bus</a></li>
+        <li><a href="./trainbooking.html">Train</a></li>
+        <li><a href="./flightbooking.html">Flight</a></li>
+        <li><a href="../components/ticket_page.html">My Ticket</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li>
+          <a href="../components/signin.html"><button>Login</button></a>
+        </li>
+        <li><a href="#">EN</a></li>
+      </ul>
+         <div class="nav-opener">
+            
+                  <i class="fa fa-bars"></i>
+            
+         </div>
+
+           
+        
+
+    </div>
+  </nav>
+
+  <div class="nav__target">
+    <div class="nav__container">
+          
+     <ul>
+       <li><a href="./pages/busbooking.html">Bus</a></li>
+       <li><a href="./pages/trainbooking.html">Train</a></li>
+       <li><a href="./pages/flightbooking.html">Flight</a></li>
+       <li><a href="#">Bookings</a></li>
+       <li><a href="./pages/contact.html">Contact Us</a></li>
+       <li>
+         <a href="./components/signin.html"><button>Login</button></a>
+       </li>
+       <li><a href="#">EN</a></li>
+     </ul>
+     <div class="search">
+       <input type="text" class="fa-search search" name="search" id="search" placeholder="Search">
+     </div>
+
+    </div>
+</div>
+
+</header>
+ 
+  <!-- End navbar Section -->
+    <section class="contact__page">
+      <div class="contact-left">
+        <div class="contact-text">
+          <h1>We’d love to</h1>
+          <h1>hear from You!</h1>
+        </div>
+        <div class="phone">
+          <i class="fas fa-phone-alt" style="font-size: 20px"></i>+234 123 4567
+        </div>
+        <div class="msg">
+          <i class="far fa-envelope" style="font-size: 20px"></i
+          >info@ticketxpress.com
+        </div>
+
+        <div class="contact-img">
+          <img src="/assets/images/travel 1.png" alt="img" />
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <h1>Contact Us</h1>
+        <form action="" class="contactform">
+          <div class="formGroup">
+            <label for="emailaddress">Full Name</label>
+            <input id="emailField" type="email" required class="form-control" />
+          </div>
+          <div class="row">
+            <div class="formGroup">
+              <label for="firstname">Email</label>
+              <input
+                id="firstNameField"
+                type="text"
+                required
+                pattern="(.*)\s(.*)"
+                class="form-control"
+              />
+            </div>
+            <div class="formGroup">
+              <label for="lastname">Phone Number</label>
+              <input
+                id="lastNameField"
+                type="text"
+                required
+                pattern="(.*)\s(.*)"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <label for="text">Message</label>
+            <textarea> </textarea>
+          </div>
+
+          <div class="submitBtn">
+            <button class="subBtn"><a href="#">Submit</a></button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/assets/js/contactform.js"></script>
+  </body>
+</html>

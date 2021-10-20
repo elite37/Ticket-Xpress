@@ -20,87 +20,82 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/userDashBoard/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/userDashBoard/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/userDashBoard/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="../assets/images/userDashBoard/site.webmanifest"
+    />
   </head>
   <body>
     <main>
-      <!-- LEft Sidebar -->
-      <section class="leftbar">
-        <div class="menu">
-          <div class="logo">
-            <a href="../index.html">
-              <img src="/assets/images/logo.png" alt="Ticket Xpress Logo" />
-            </a>
-          </div>
-          <div class="menu-list">
-            <div class="menu-options">
-              <div class="option active">
-                <a href="#">
-                  <!-- <i class="fas fa-folder-minus"></i> -->
-                  <img
-                    src="../assets/images/userDashBoard/dashboard.png"
-                    alt="dashboard"
-                    class="icon"
-                  />
-                  <p>Dashboard</p>
-                </a>
-              </div>
-              <div class="option">
-                <a href="#">
-                  <!-- <i class="fas fa-ticket-alt"></i> -->
-                  <img
-                    src="../assets/images/userDashBoard/myTicket.png"
-                    alt="Ticket"
-                    class="icon"
-                  />
-                  <p>My Ticket</p>
-                </a>
-              </div>
-              <div class="option">
-                <a href="#">
-                  <!-- <i class="fas fa-money-check"></i> -->
-                  <img src="../assets/images/userDashBoard/transaction.png"
-                  alt="transaction class="icon" />
-                  <p>Transaction</p>
-                </a>
-              </div>
-              <div class="option">
-                <a href="">
-                  <img
-                    src="../assets/images/userDashBoard/agent.png"
-                    alt="agent"
-                    class="icon"
-                  />
-                  <p>Agent</p>
-                </a>
-              </div>
-              <div class="option">
-                <a href="#">
-                  <!-- <i class="fas fa-cog"></i> -->
-                  <img
-                    src="../assets/images/userDashBoard/settings.png"
-                    alt="setting"
-                    class="icon"
-                  />
-                  <p>Settings</p>
-                </a>
-              </div>
-            </div>
-            <div class="menu-logout">
-              <div class="option logout">
-                <a href="#">
-                  <!-- <i class="fas fa-sign-out-alt"></i> -->
-                  <img
-                    src="../assets/images/userDashBoard/logout.png"
-                    alt="logout"
-                    class="icon"
-                  />
-                  <p>Log out</p>
-                </a>
-              </div>
-            </div>
-          </div>
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <div class="logo-details">
+          <a href="../index.html">
+          <img src="/assets/images/logo.png" alt="Ticket Xpress Logo" />
+          </a>
+          <i class="fas fa-bars" id="btn"></i>
         </div>
-      </section>
+        <ul class="nav-list">
+          <li>
+            <a href="#">
+              <i class="fas fa-folder-minus"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+            <a href="../components/dashboardticket.html">
+              <i class="fas fa-ticket-alt"></i>
+              <span class="links_name">My Ticket</span>
+            </a>
+            <span class="tooltip">My Ticket</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-money-check"></i>
+              <span class="links_name">Transaction</span>
+            </a>
+            <span class="tooltip">Transaction</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-magento"></i>
+              <span class="links_name">Agent</span>
+            </a>
+            <span class="tooltip">Agent</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <span class="links_name">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+          </li>
+          <li class="profile">
+            <a href="#">
+              <i class="fas fa-sign-out-alt logout"></i>
+              <span class="links_name logout">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <!-- End of Left sidebar -->
 
       <!-- Main Dashboard -->
@@ -329,5 +324,23 @@
       </section>
       <!-- End of Right sidebar -->
     </main>
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+        } else {
+          closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+        }
+      }
+    </script>
   </body>
 </html>

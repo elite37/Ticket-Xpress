@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Ticket</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/dashboardticket.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/ticket_page.css"> -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/userDashBoard/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/userDashBoard/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/userDashBoard/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="../assets/images/userDashBoard/site.webmanifest"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <div class="logo-details">
+          <a href="../index.html">
+          <img src="/assets/images/logo.png" alt="Ticket Xpress Logo" />
+          </a>
+          <i class="fas fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="../pages/userdashboard.html">
+              <i class="fas fa-folder-minus"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-ticket-alt"></i>
+              <span class="links_name">My Ticket</span>
+            </a>
+            <span class="tooltip">My Ticket</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-money-check"></i>
+              <span class="links_name">Transaction</span>
+            </a>
+            <span class="tooltip">Transaction</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-magento"></i>
+              <span class="links_name">Agent</span>
+            </a>
+            <span class="tooltip">Agent</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <span class="links_name">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+          </li>
+          <li class="profile">
+            <a href="#">
+              <i class="fas fa-sign-out-alt logout"></i>
+              <span class="links_name logout">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End of Left sidebar -->
+      <!-- Ticket Section -->
+      <section class="main">
+        <div class="main-nav">
+          <div class="welcome">
+            <h1>Hello, Abayomi!</h1>
+            <small>Welcome back and explore the world</small>
+          </div>
+          <div class="search">
+            <label for="search">
+              <i class="fas fa-search-plus"></i>
+            </label>
+            <input
+              type="text"
+              name="Search"
+              id="search"
+              placeholder="Search Destination"
+            />
+          </div>
+          <div class="notification">
+            <i class="far fa-bell"></i>
+          </div>
+        </div>
+        <div class="ticketContainer">
+      <h1 class="ticketPage-text">What would you like to do?</h1>
+
+      <div class="ticketCard-wrap">
+        <div class="ticketCard">
+          <div class="bg-Img">
+            <img src="../assets/images/ticket-page/Decore.png" alt="" />
+          </div>
+
+          <img
+            src="../assets/images/ticket-page/add-ticket.png"
+            alt=""
+            class="ticket-img"
+          />
+          <h3 class="ticketPage-txt">GET MY TICKET</h3>
+          <p class="ticketPage-para">
+            Yet to get your ticket? This service allows you to request for
+            ticket on a paid booking.
+          </p>
+          <button class="ticket-pageBtn" onclick="showModal()"><a>SELECT</a></button>
+        </div>
+
+        <div class="ticketCard">
+          <div class="bg-Img">
+            <img src="../assets/images/ticket-page/Decore.png" alt="" />
+          </div>
+
+          <img
+            src="../assets/images/ticket-page/change-ticket.png"
+            alt=""
+            class="ticket-img"
+          />
+          <h3 class="ticketPage-txt">CHANGE TICKET</h3>
+          <p class="ticketPage-para">
+            This service allows you to make changes on your ticket such as date
+            change, route change and cabin change on your existing bookings
+          </p>
+          <button
+            class="ticket-pageBtn"
+            id="ticket-pageBtn"
+            onclick="showModal()"
+          >
+            <a>SELECT</a>
+          </button>
+          <div class="modal-display" id="modal-display">
+            <button class="modal-closure" onclick="closeModal()">x</button>
+            <form action="" class="modal-form">
+              <input
+                type="text"
+                placeholder="Booking Number"
+                class="bookingNum"
+              />
+              <input type="text" placeholder="Last Name" class="lastName" />
+              <input type="email" placeholder="Email" class="email" />
+              <input
+                type="button"
+                value="SUBMIT"
+                class="modal-btn"
+                onclick="submitModal()"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="ticketCard">
+          <div class="bg-Img">
+            <img src="../assets/images/ticket-page/Decore.png" alt="" />
+          </div>
+          <img src="../assets/images/ticket-page/refund.png" alt="" class="ticket-img" />
+          <h3 class="ticketPage-txt">REFUND</h3>
+          <p class="ticketPage-para">
+            This service allows you to request for a refund on a paid existing
+            booking.
+          </p>
+          <button class="ticket-pageBtn" onclick="showModal()"><a>SELECT</a></button>
+        </div>
+      </div>
+    </div>
+      </section>
+      <!-- End of Ticket section -->
+
+    </main>
+    <script src="../assets/js/dashboardsidebar.js"></script>
+    <script src="../assets/js/ticket_page_modal.js"></script>
+  </body>
+</html>
