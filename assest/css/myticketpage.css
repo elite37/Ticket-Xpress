@@ -130,10 +130,20 @@ main h1.text {
     /* padding: 30px; */
     
 }
+.decore img {
+    float: right;
+    /* background-size: contain; */
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1
+}
 
 .box {
     border: 2px solid #fff1da;
-    background: linear-gradient( 90deg, white, #fff1da);
+    /* background-image: url('assest\images\Decore.png'); */
     border-radius: 15px;
     box-shadow: #fdcea7 0px 3px 8px;
     flex: 1;
@@ -154,16 +164,13 @@ main h1.text {
 }
 
  .circle img {
-    background: white;
-    border: 3px solid #fff1da;
-    border-radius: 100%;
-    height: 100px;
+    /* border-radius: 100%; */
+    /* height: 100px; */
     width: 100px;
     text-align: center;
     justify-content: center;
-    padding: 5px;
-
     object-position: center;
+    margin: 10pxauto;
     padding: 5px;
     /* background-position: center; */
 }
@@ -280,6 +287,15 @@ footer:hover {
 
     .box-container {
         flex-direction: column;
+    }
+    main h1.text{
+        font-size: 20px;
+    }
+    .box p.select a {
+        font-size: 12px;
+    }
+    .box h3 {
+        font-size: 14px;
     }
 }
 
