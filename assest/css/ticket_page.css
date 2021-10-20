@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  a{
+      text-decoration: none;
+  }
+  
+  .ticketPage-text{
+      text-align: center;
+      font-size: 30px;
+      padding-top: 120px;
+      padding-bottom: 40px;
+  }
+
+  .ticketCard-wrap{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      margin-left: 280px;
+      margin-right: 280px;
+  }
+
+  .ticketCard{
+      /* background-image: url('../images/Decore.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top; */
+      border: 1px solid #DF6951;
+      border-radius: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
+      padding: 70px 20px 0px 20px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: 5px 5px 12px 5px rgba(203,203,203,0.7);
+  }
+  .bg-Img{
+    height: 270px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .bg-Img img{
+      height: 100%;
+      width: 100%;
+  }
+  .ticket-img{
+      width: 35%;
+  }
+  .ticketPage-txt{
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #F5723B;
+  }
+  .ticketPage-para{
+      font-size: 13px;
+      padding-top: 10px;
+      height: 200px;
+  }
+  .ticket-pageBtn{
+      border: none;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+                
+  }
+  .modal-display{
+      width: 100%;
+      height: 60%;
+      position: absolute;
+      bottom: 20px;
+      padding-top: 15px;
+      left: 0;
+      z-index: 20;
+      background-color: #FFF1DA;
+      display: none;
+      box-shadow: 5px 5px 12px 5px rgba(203,203,203,0.7);
+  }
+
+  .modal-form input[type=text], input[type=email]{
+      width: 90%;
+      height: 50%;
+      border-radius: 0;
+      border: 1px #DF6951 solid;
+      margin: 12px auto;
+      padding: 8px;
+      font-size: 18px;
+  }
+
+  .modal-btn {
+      background-color: #DF6951;
+      color: #ffffff;
+      width: 100%;
+      padding: 8px;
+      border: none;
+      font-size: 18px;
+      margin-top: 14px;
+  }
+  .modal-closure{
+      width: 10px;
+      height: 15px;
+      color: #333;
+      font-size: 15px;
+      border: none;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      background-color: #FFF1DA;
+      /* text-align: right; */
+  }
+
+  @media (max-width:900px) {
+      
+    .ticketCard-wrap{
+        
+        flex-direction: column;
+    }
+  
+    .ticketCard{
+        margin-bottom: 30px;
+    }
+    .bg-Img{
+      height: 320px;
+      width: 250px;
+      
+    }
+    
+  }
