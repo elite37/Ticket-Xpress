@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket Page</title>
-    <link rel="stylesheet" href="../assest/css/navbar.css">
+    <link rel="stylesheet" href="../assest/css/navbar.css" />
     <link rel="stylesheet" href="../assest/css/footer.css" />
     <link rel="stylesheet" href="../assest/css/ticket_page.css" />
   </head>
@@ -58,7 +58,25 @@
             Yet to get your ticket? This service allows you to request for
             ticket on a paid booking.
           </p>
-          <button class="ticket-pageBtn"><a>SELECT</a></button>
+          <button class="ticket-pageBtn" onclick="showModal1()"><a>SELECT</a></button>
+          <div class="modal-display" id="modal-display1">
+            <button class="modal-closure" onclick="closeModal1()">x</button>
+            <form action="" class="modal-form">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="firstName"
+              />
+              <input type="text" placeholder="Last Name" class="lastName" />
+              <input type="email" placeholder="Email" class="email" />
+              <input
+                type="button"
+                value="SUBMIT"
+                class="modal-btn"
+                onclick="submitModal1()"
+              />
+            </form>
+          </div>
         </div>
 
         <div class="ticketCard">
@@ -78,13 +96,12 @@
           </p>
           <button
             class="ticket-pageBtn"
-            id="ticket-pageBtn"
-            onclick="showModal()"
+            onclick="showModal2()"
           >
             <a>SELECT</a>
           </button>
-          <div class="modal-display" id="modal-display">
-            <button class="modal-closure" onclick="closeModal()">x</button>
+          <div class="modal-display" id="modal-display2">
+            <button class="modal-closure" onclick="closeModal2()">x</button>
             <form action="" class="modal-form">
               <input
                 type="text"
@@ -97,7 +114,7 @@
                 type="button"
                 value="SUBMIT"
                 class="modal-btn"
-                onclick="submitModal()"
+                onclick="submitModal2()"
               />
             </form>
           </div>
@@ -113,7 +130,28 @@
             This service allows you to request for a refund on a paid existing
             booking.
           </p>
-          <button class="ticket-pageBtn"><a>SELECT</a></button>
+          <button
+            class="ticket-pageBtn"
+            onclick="showModal3()"
+          ><a>SELECT</a></button>
+          <div class="modal-display" id="modal-display3">
+            <button class="modal-closure" onclick="closeModal3()">x</button>
+            <form action="" class="modal-form">
+              <input
+                type="text"
+                placeholder="Booking Number"
+                class="bookingNum"
+              />
+              <input type="text" placeholder="Last Name" class="lastName" />
+              <input type="email" placeholder="Email" class="email" />
+              <input
+                type="button"
+                value="SUBMIT"
+                class="modal-btn"
+                onclick="submitModal3()"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>
