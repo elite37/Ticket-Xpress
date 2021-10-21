@@ -18,7 +18,7 @@ const messageInput = document.getElementById("message");
 
 let isFormValid = false;
 
-const inputs = [nameInput, emailInput, phoneInput, messageInput];
+const inputs = [nameInput, emailInput, phoneInput, messageInput]
 
 const resetElement = (element) => {
   element.classList.remove("invalid");
@@ -34,7 +34,6 @@ const validateInputs = () => {
   isFormValid = true;
   resetElement(nameInput);
   resetElement(emailInput);
-  resetElement(messageInput);
 
   if (!nameInput.value) {
     isFormValid = false;
@@ -51,10 +50,10 @@ const validateInputs = () => {
     invalidElement(emailInput);
   }
 
-  // if (!isValidPhone(phoneInput.value)) {
-  //   isFormValid = false;
-  //   invalidElement(messageInput);
-  // }
+  if (!isValidPhone(phoneInput.value)) {
+    isFormValid = false;
+    invalidElement(phoneInput);
+  }
 }
 
 form.addEventListener("submit", (e) => {
@@ -71,6 +70,10 @@ nameInput.addEventListener("input", () => {
 });
 
 emailInput.addEventListener("input", () => {
+  validateInputs();
+});
+
+phoneInput.addEventListener("input", () => {
   validateInputs();
 });
 
