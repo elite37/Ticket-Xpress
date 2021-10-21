@@ -50,27 +50,6 @@
     </div>
   </nav>
 
-  <div class="nav__target">
-    <div class="nav__container">
-          
-     <ul>
-       <li><a href="./pages/busbooking.html">Bus</a></li>
-       <li><a href="./pages/trainbooking.html">Train</a></li>
-       <li><a href="./pages/flightbooking.html">Flight</a></li>
-       <li><a href="#">Bookings</a></li>
-       <li><a href="./pages/contact.html">Contact Us</a></li>
-       <li>
-         <a href="./components/signin.html"><button>Login</button></a>
-       </li>
-       <li><a href="#">EN</a></li>
-     </ul>
-     <div class="search">
-       <input type="text" class="fa-search search" name="search" id="search" placeholder="Search">
-     </div>
-
-    </div>
-</div>
-
 </header>
  
   <!-- End navbar Section -->
@@ -95,29 +74,32 @@
 
       <div class="contact-right">
         <h1>Contact Us</h1>
-        <form action="" class="contactform">
+        <form  class="contactform">
           <div class="formGroup">
-            <label for="emailaddress">Full Name</label>
-            <input id="emailField" type="email" required class="form-control" />
+            <label for="name">Full Name</label>
+            <input id="name" type="text"
+            placeholder="Full Name" required class="form-control" />
+            <div class="error-hint hidden">Your name is required</div>
           </div>
           <div class="row">
             <div class="formGroup">
-              <label for="firstname">Email</label>
+              <label for="email">Email</label>
               <input
-                id="firstNameField"
-                type="text"
+                id="email"
+                type="email"
                 required
-                pattern="(.*)\s(.*)"
                 class="form-control"
+                placeholder="Enter Email"
               />
+              <div class="error-hint hidden">Your Email is required</div>
             </div>
             <div class="formGroup">
               <label for="lastname">Phone Number</label>
               <input
-                id="lastNameField"
+                id="phone"
                 type="text"
                 required
-                pattern="(.*)\s(.*)"
+                placeholder="Enter Phone number"
                 class="form-control"
               />
             </div>
@@ -125,13 +107,14 @@
 
           <div class="formGroup">
             <label for="text">Message</label>
-            <textarea> </textarea>
+            <textarea id="message" placeholder="Message Here"> </textarea>
           </div>
 
           <div class="submitBtn">
-            <button class="subBtn"><a href="#">Submit</a></button>
+            <button class="subBtn">Submit</button>
           </div>
         </form>
+        <div class="hidden thank-you">Thank you for your feedback</div>
       </div>
     </section>
     <script src="/assets/js/contactform.js"></script>
